@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    direction: rtl;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
+    background:#fff;
+}
+
+.loader.hidden{
+    animation:fadeOut 2S;
+    -webkit-animation:fadeOut 2S;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+h2{
+    font-size: 40px;
+}
+
+.img{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.img .thumb{
+    width: 33.33%;
+    height: 40vh;
+    margin: 10px;
+}
